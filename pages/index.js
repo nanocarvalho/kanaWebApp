@@ -54,7 +54,6 @@ export default function Home() {
   }
 
   useEffect(()=>{handleKanaDict(checkbox)},[checkbox])
-
   return (
     <div className={styles.container}>
       <header>
@@ -72,7 +71,6 @@ export default function Home() {
           <Card 
             key={item.kana}
             kana={item.kana} 
-            options={item.options} 
             handleScore={handleScore} 
             correct={item.correct}
             />
