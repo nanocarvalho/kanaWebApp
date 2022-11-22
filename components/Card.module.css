@@ -1,33 +1,32 @@
 .card {
     background-color: var(--card-bg);
-    padding: 1rem;
     margin: 0 auto;
     max-width: 95%;
-    height: 350px;
     text-align: center;
 }
 
 .card h2 {
     font-size: 6rem;
-    margin: 3rem 0;
+    padding: 2rem;
     color: var(--font-dark);
 }
 
 .btnContainer {
     display: flex;
-    margin: 1rem 0;
-    gap: 15px;
+    justify-content: center;
+    padding: 1rem;
+    gap: 25px;
 }
 
 .btnContainer button {
-    flex: 1;
-    padding: 1.5rem;
+    min-width: 80px;
+    min-height: 80px;
     border: none;
     border-radius: 0.2rem;
     background-color: var(--btn);
     font-weight: 500;
     font-size: 1.4rem;
-    transition: all 0.2s ease;
+    transition: all 0.2s linear;
 }
 
 .btnContainer > button:hover {
@@ -37,18 +36,39 @@
 @media screen and (min-width:768px){
     .card {
         max-width: 65%;
-        height: 450px;
     }
     .card h2 {
         font-size: 8rem;
     }
     .btnContainer {
-        margin: 6rem 0 1rem 0;
+        margin-top: 2rem;
+    }
+    .btnContainer button {
+        min-width: 100px;
+        min-height: 100px;
     }
 }
 
 @media screen and (min-width:1280px){
     .card {
         max-width: 45%;
+    }
+}
+
+@media only screen and (min-device-width: 600px) and (max-device-height:1366px) {
+    .card {
+        max-width: 50%;
+    }
+    .card h2{
+        font-size: 6rem;
+        padding: 1rem;
+    }
+    .btnContainer {
+        margin-top: 1rem;
+    }
+    .btnContainer button {
+        min-width: 60px;
+        min-height: 60px;
+        font-size: 1.2rem;
     }
 }

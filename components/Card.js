@@ -27,11 +27,11 @@ const Card = ({kana, correct, handleScore, handleMessage}) => {
     useEffect(()=>{
         let optionsSelected = []
         for(let i = 0; i < 2; i++) {
-            optionsSelected.push(options[Math.ceil(Math.random() * options.length)])
+            optionsSelected.push(options[Math.ceil(Math.random() * options.length - 1)])
         }
         optionsSelected.push(correct)
 
-        optionsSelected.sort(()=> Math.random() - 0.5)
+        optionsSelected.sort(()=> 0.5 - Math.random())
         setBtnOptions([...optionsSelected])
     }, [kana])
   
