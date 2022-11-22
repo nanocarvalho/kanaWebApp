@@ -1,0 +1,112 @@
+.container {
+    position: relative;
+}
+
+.title {
+    color: var(--font-dark);
+    margin: 1rem 0;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkboxContainer {
+    margin: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    color: var(--font-dark);
+}
+
+.checkboxContainer > input {
+    margin:0 1rem;
+    width: 16px;
+}
+
+.checkboxContainer >input:last-child {
+    margin-right: 0;
+}
+
+.footer {
+    margin: 2rem 0 1rem 0;
+    text-align: center;
+    color: var(--font-dark);
+}
+.footer > p {
+    margin: 1rem 0;
+}
+
+.footer > p > a {
+    text-decoration-style: wavy;
+    color: var(--font-dark);
+    transition: all .2s ease;
+}
+
+.footer > p> a:hover {
+    opacity: 0.5;
+}
+
+.alertDisable {
+    display: none;
+}
+
+.alertEnable {
+    position: fixed;
+    top: 25%;
+    left: 50%;
+    width: 95%;
+    display: block;
+    transform: translate(-50%, -50%);
+}
+
+.alertCorrect,
+.alertIncorrect {
+    padding: 1rem;
+    margin: 1rem auto ;
+    text-align: center;
+    
+}
+
+.alertCorrect {
+    background-color: var(--alert-green);
+    color: var(--alert-green-font);
+    box-shadow: 2px 2px 25px 2px #1b5e1f60;
+}
+
+.alertIncorrect {
+    background-color: var(--alert-red);
+    color: var(--alert-red-font);
+    box-shadow: 2px 2px 25px 2px #d5000067;
+}
+
+@media screen and (min-width:768px){
+    .alertEnable {
+        width: 65%;
+        top: 25%;
+
+    }
+}
+
+@media screen and (min-width:1024px){
+    .alertEnable {
+        top: 20%;
+    }
+}
+
+@media screen and (min-width:1280px){
+    .alertEnable {
+        top: 15%;
+        width: 45%;
+    }
+}
+
+@media screen and (min-width:1920px){
+    .alertEnable {
+        top: 8%;
+    }
+}

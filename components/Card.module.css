@@ -1,0 +1,54 @@
+.card {
+    background-color: var(--card-bg);
+    padding: 1rem;
+    margin: 0 auto;
+    max-width: 95%;
+    height: 350px;
+    text-align: center;
+}
+
+.card h2 {
+    font-size: 6rem;
+    margin: 3rem 0;
+    color: var(--font-dark);
+}
+
+.btnContainer {
+    display: flex;
+    margin: 1rem 0;
+    gap: 15px;
+}
+
+.btnContainer button {
+    flex: 1;
+    padding: 1.5rem;
+    border: none;
+    border-radius: 0.2rem;
+    background-color: var(--btn);
+    font-weight: 500;
+    font-size: 1.4rem;
+    transition: all 0.2s ease;
+}
+
+.btnContainer > button:hover {
+    opacity: 0.5;
+}
+
+@media screen and (min-width:768px){
+    .card {
+        max-width: 65%;
+        height: 450px;
+    }
+    .card h2 {
+        font-size: 8rem;
+    }
+    .btnContainer {
+        margin: 6rem 0 1rem 0;
+    }
+}
+
+@media screen and (min-width:1280px){
+    .card {
+        max-width: 45%;
+    }
+}
