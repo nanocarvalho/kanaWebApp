@@ -55,7 +55,10 @@ export default function Home() {
       setScore({...score, incorrect: incorrect })
       setAlertColor('Red')
     }
-    setActualItem(actualItem => actualItem + 1)
+    //Old version, more fixed
+    //setActualItem(actualItem => actualItem + 1)
+    //New version, random kana
+    setActualItem(actualItem => Math.ceil(Math.random() * kanaDict.length))
   }
 
   const handleMessage = (status, kana, correct,)=> {

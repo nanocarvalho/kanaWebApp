@@ -5,8 +5,8 @@ function KanaWebApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>Kana quiz</title>    
-      </Head>
+        <title>Kana quiz</title> 
+      </Head>   
       <Component {...pageProps} />
     </>
   ) 
